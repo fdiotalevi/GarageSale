@@ -1,0 +1,14 @@
+{
+  "name": "garagesale",
+  "version": "0.1.0",
+  "repository": {},
+  "directories": {
+    "lib": "."
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+	"express": "2.2.0"
+   }
+}
