@@ -1,8 +1,77 @@
 body {
-  padding: 50px;
+  margin: auto;
+  width: 960px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+h1 {
+	font-size: 40px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	margin-left: 20px;
+}
+
+h2 {
+	font-size: 17px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	margin-left: 20px;
+}
+
+.item {
+	float: left;
+	width: 200px;
+	padding: 20px;
+	height: 300px;
+}
+
+.title {
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.center {
+	text-align: center;
+}
+
+.description {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#item-image img {
+	width: 160px;
+	height: 120px;
+}
+
+#shopwindow {
+	clear: both;
+	position: absolute;
+	top: 100px;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	background-color: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #2f2f2f;
+	text-align: center;
+}
+
+#sw-title {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+#sw-description {
+	font-size: 18px;
+	margin-top: 10px;	
+	margin-bottom: 10px;
+}
+
+#sw-price {
+	font-size: 18px;
 }
