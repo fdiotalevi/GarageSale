@@ -10,6 +10,8 @@
   },
   "dependencies": {
 	"express": "2.2.0",
-	"jade": "0.10.3"
+	"jade": "0.10.3",
+	"mongodb": "0.9.3",
+	"mongoskin": "0.1.1"	
    }
 }

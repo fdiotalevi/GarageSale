@@ -1,20 +1,13 @@
 h1= title
 h2= description
 
-p.center Click on an item to see the detail
 
 - each item, key in items
 	.item(id='item'+key)
-		.title(id='title-item'+key) #{item.name} 
+		.title(id='title-item'+key) #{item['title']} 
 		#item-image 
-			img(id='img-item'+key, src=item.image)		
-		.description(id='description-item'+key) #{item.description}
-		#item-price(id='price-item'+key) #{item.price}
+			img(id='img-item'+key, src=item['image'])		
+		.description(id='description-item'+key) #{item['description']}
+		#item-price(id='price-item'+key) #{item['price']}
 						
 		
-#shopwindow
-	p (Click anywhere to close the detail)
-	#sw-title
-	img#sw-image(src='')
-	#sw-description
-	#sw-price

@@ -4,8 +4,6 @@
  */
 
 var express = require('express');
-var listing = require('./listing.js');
-
 var app = module.exports = express.createServer();
 
 // Configuration
@@ -14,7 +12,9 @@ app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.bodyParser());
+  app.use(express.cookieParser());
   app.use(express.methodOverride());
+  app.use(express.session({ secret: "c00k1e f0r g4r4ges4le" }));
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
 });
@@ -28,8 +28,11 @@ app.configure('production', function(){
 });
 
 // Routes
+var init = require('./app/init');
+init.init();
 
-app.get('/', listing.render);
+var routes = require('./app/routes');
+routes.define(app);
 
 // Only listen on $ node app.js
 
