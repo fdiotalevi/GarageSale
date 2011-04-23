@@ -35,3 +35,20 @@
 	color: red;
 	margin-left: 5px;
 }
+
+#static-content {
+	font-size: 15px;
+	margin-top:55px;
+	margin-left: 40px;
+}
+
+#static-content #avatar {
+	float: left;
+	padding: 20px;
+}
+
+#static-content #description {
+	float: left;
+	width: 600px;
+	padding: 18px;	
+}

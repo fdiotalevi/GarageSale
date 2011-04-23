@@ -6,5 +6,7 @@ this.authentication = {
 	password: 'g4r4ges4le'
 }
 
+this.mongo_uri = process.env['DUOSTACK_DB_MONGODB'] || 'mongodb://localhost:27017/garagesale';
+
 
 

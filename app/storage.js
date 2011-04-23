@@ -1,13 +1,13 @@
 var mongo = require('mongoskin');
 var crypto = require('crypto');
-
+var configurations = require('./conf.js');
 
 this.Storage = function () {
 	var self = this;
 	var items = 'items';
 	var users = 'users';
 	
-	var connection = mongo.db('localhost:27017/garagesale');
+	var connection = mongo.db(configurations.mongo_uri);
 	
 	var logError = function(err, data) {
 		if (err != null)
