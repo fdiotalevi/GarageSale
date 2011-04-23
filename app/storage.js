@@ -7,7 +7,8 @@ this.Storage = function () {
 	var items = 'items';
 	var users = 'users';
 	
-	var connection = mongo.db(configurations.mongo_uri);
+	console.log('starting mongo with URI '+configurations.mongo_uri);
+	var connection = mongo.db(configurations.mongo_uri);	
 	
 	var logError = function(err, data) {
 		if (err != null)
