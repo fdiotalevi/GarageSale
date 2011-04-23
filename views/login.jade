@@ -2,6 +2,8 @@
   h1= title
 
   form(action='/login', method='POST', class='validated')
+    - if (error)
+      p.error &nbsp;&nbsp;&nbsp;&nbsp;Uh... wrong username or password
     p Username
     p
       input(type='text', name='username', class='required') 

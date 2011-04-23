@@ -2,18 +2,27 @@ ul.filter-nav
   li
     h4 Filter:
   li.selected-1
-    a(href="#",data-value="all")
+    a(href="#",data-value="all") 
       h4 All
   li
-    a(href="#", data-value="print") Print
-
+    a(href="#", data-value="furniture") 
+      h4 Furniture
+  li
+    a(href="#", data-value="appliance") 
+      h4 Appliance
+  li
+    a(href="#", data-value="electronic") 
+      h4 TV/Audio/Computer
+    
 .clear
 
 ul(id="filter", class="grid")
   - each item, key in items
-    li(data-id="id-"+key,class="web")
+    li(data-id="id-"+key,class=item['category'], style="height:226px;")
       a(href=item['image'], rel="prettyPhoto[portfolio]")
         img(src=item['image'], width='150', height='120')
-      a(href="portfolio-post.html", title="Permalink to Portfolio Post")
+      a(href="/show/"+item['_id'], title="Show details")
         h6= item['title']
-      p= item['description']
+      p= item['description'].substr(0,40)+'...'
+      p Price #{item['price']} Euro &nbsp;&nbsp;&nbsp;
+        a(href="/show/"+item['_id'], title="Show details") Details

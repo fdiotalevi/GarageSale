@@ -12,6 +12,9 @@
     p Description
     p
       textarea(name='item[description]', class='required')= item.description
+    p Category
+    p
+      input(type='text', name='item[category]', value=item.category)       
     p Price
     p
       input(type='text', name='item[price]', value=item.price, class='required')

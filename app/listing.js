@@ -11,3 +11,12 @@ this.render = function(req,res) {
 		});		
 	});	
 }
+
+this.show = function(req, res) {
+	storage.getItem(req.params.id, function(err, item) {
+		res.render('show', {
+			title: item['title'],
+			item: item
+		});		
+	});	
+}

@@ -59,5 +59,17 @@ this.Storage = function () {
 		});
 	}
 	
+	this.changePassword = function(id, newpassword) {
+		connection.collection(users).findById(id, function(err, user) {
+			if (err != null) {
+				logError(err, user);
+			}
+			else {
+				user['password'] = encrypt(newpassword);
+				connection.collection(users).updateById(user['_id'], user, logError);	
+			}							
+		});
+	}
+	
 }
 

@@ -739,7 +739,7 @@ a#next:hover span {
 	padding-top: 95px;
 	padding-left: 40px;
 	padding-bottom: 60px;
-	width: 700px;
+	width: 900px;
 }
 #portfolio-content {
 	background: #f1f1f1;
@@ -1138,6 +1138,7 @@ h1.title a:hover {
 #drop {
 	width: 455px;
 	float: left;
+	margin-top: 75px;
 }
 
 .post {

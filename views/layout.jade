@@ -7,6 +7,12 @@ html
     link(rel='stylesheet', href='/style/css/colors/blue.css')   
     link(rel='stylesheet', href='/style/css/prettyPhoto.css')        
     link(rel='stylesheet', href='/stylesheets/admin.css')    
+    /if IE 7
+      link(rel="stylesheet",type="text/css",href="/style/css/ie7.css")
+    /if IE 8
+      link(rel="stylesheet",type="text/css",href="/style/css/ie8.css")
+    /if IE 9
+      link(rel="stylesheet",type="text/css",href="/style/css/ie9.css")
     link(rel="shortcut icon", type="image/x-icon", href="/style/images/favicon.png")
     script(language='javascript', type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js')    
     script(language='javascript', type='text/javascript', src='http://ajax.microsoft.com/ajax/jquery.validate/1.5.5/jquery.validate.min.js')    
@@ -24,17 +30,16 @@ html
     #left-side
       #logo
         a(href="/") 
-          img(src='/images/logo.png')
-    
+          img(src='/images/logo.png')    
 
       #menu.menu-v
         ul
           li
             a(href="/") Home
           li
-            a(href="gallery.html") Gallery
+            a(href="/info") More Info
           li
-            a(href="contact.html") Contact
+            a(href="/about") About this site
           li
             a(href="/admin") Admin
 
@@ -45,13 +50,10 @@ html
               img(src="/style/images/icon-rss.png")
           li
             a(href="http://twitter.com/fdiotalevi")
-              img(src="/style/images/icon-tw.png")
-        
-
+              img(src="/style/images/icon-tw.png")        
 
         #footer &copy; 2011 
           a(href='http://knokode.com') Knokode Ltd
-
     
     #container
       #content
@@ -60,4 +62,3 @@ html
           !=body                              
 
     .clear
-
