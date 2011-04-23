@@ -1,0 +1,37 @@
+#adminarea {
+	margin-top: 72px;
+	margin-left: 50px;
+	font-size: 16px;
+	color: #5B5B5B;
+}
+
+#adminarea a, a:visited {
+	color: #5B5B5B;
+}
+
+#adminarea input[type='text'] {
+	width: 300px;
+	font-size: 14px;
+}
+
+#adminarea input[type='password'] {
+	width: 300px;
+	font-size: 14px;
+}
+
+#adminarea input[type='submit'] {
+	width: 200px;
+	font-size: 14px;
+}
+
+#adminarea textarea {
+	width: 500px;
+	height: 200px;
+	font-size: 14px;
+}
+
+.error {
+	font-size: 13px;
+	color: red;
+	margin-left: 5px;
+}

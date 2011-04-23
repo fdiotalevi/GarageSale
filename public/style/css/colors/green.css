@@ -1,0 +1,89 @@
+a, 
+a:hover, 
+.highlight, 
+.portfolio-post #right-side a, 
+.menu-v ul li a.active, 
+.menu-v ul li a.selected, 
+.menu-v ul li a:hover, 
+h1.title a:hover, 
+.meta a, 
+.meta .date, 
+ul.list li a:hover, 
+#right-side a:hover, 
+#twitter ul li a, 
+.username a:hover, 
+#right-side .username a:hover, 
+ul.grid li a h4:hover, 
+ul.filter-nav li a:hover h4, 
+ul.filter-nav li.selected-1 a h4, 
+ul.grid li a h6:hover,
+h4.trigger:hover,
+h4.trigger.active:hover, 
+h4.trigger.active,
+.notes,.notice,.success,.error  {
+	color: #79adaa;
+}
+
+.highlight {
+	border-bottom: 1px dotted #79adaa;
+}
+
+ul.check li {
+	background: transparent url(../../images/check-green.png) no-repeat center left;
+}
+
+ul.bullet li {
+	background: transparent url(../../images/bullet-green.png) no-repeat center left;
+}
+
+.button, .button span {
+	background-image: url(../../images/button-green.png);
+}
+
+#right-side ul.tags li a, #right-side ul.tags li a span {
+	background-image: url(../../images/button2-green.png);
+}
+
+ul.page-navi li a, ul.page-navi li a span {
+	background-image: url(../../images/button2-green.png);
+}
+
+ul.page-navi li:first-child a {
+	background-image: url(../../images/button1-next-green.png);
+}
+
+a#next, a#next span {
+	background-image: url(../../images/button1-next-green.png);
+}
+
+a#prev {
+	background-image: url(../../images/button1-prev-green.png);
+}
+
+ul.tabs li a, ul.tabs li a span {
+	background-image: url(../../images/button2-green.png);
+}
+
+ul.tabs li:first-child a, ul.tabs li:first-child a span {
+	background-image: url(../../images/button1-next-green.png);
+}
+
+.check-icon {
+	background: transparent url(../../images/check-green.png) no-repeat center left;
+}
+
+#comment-form input#submit-button {
+	background: transparent url(../../images/submit-green.png) no-repeat center top;
+}
+
+#comment-form input#submit-button:hover {
+	background: transparent url(../../images/submit-green.png) no-repeat center bottom;
+}
+
+#contact-form input#submit-button {
+	background: transparent url(../../images/submit-green.png) no-repeat center top;
+}
+
+#contact-form input#submit-button:hover {
+	background: transparent url(../../images/submit-green.png) no-repeat center bottom;
+}

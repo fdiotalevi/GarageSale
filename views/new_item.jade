@@ -1,21 +1,22 @@
-h1 Create a new item
+#adminarea
+  h1 Create a new item
 
-form(action='/admin/save', method='POST', class='validated')
-  input(type='hidden', name = 'item[id]', value=item._id)
-  p Title
-  p
-    input(type='text', name='item[title]', value=item.title, class='required') 
-  p Image URL
-  p
-    input(type='text', name='item[image]', value=item.image, class='required') 
-  p Description
-  p
-    textarea(name='item[description]', class='required')= item.description
-  p Price
-  p
-    input(type='text', name='item[price]', value=item.price, class='required')
-  p
-    input(type='submit', value='Save')
-  p
-    a(href='/admin') Back to Admin
+  form(action='/admin/save', method='POST', class='validated')
+    input(type='hidden', name = 'item[id]', value=item._id)
+    p Title
+    p
+      input(type='text', name='item[title]', value=item.title, class='required') 
+    p Image URL
+    p
+      input(type='text', name='item[image]', value=item.image, class='required') 
+    p Description
+    p
+      textarea(name='item[description]', class='required')= item.description
+    p Price
+    p
+      input(type='text', name='item[price]', value=item.price, class='required')
+    p
+      input(type='submit', value='Save')
+    p
+      a(href='/admin') Back to Admin
      

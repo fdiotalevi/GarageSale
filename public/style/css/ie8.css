@@ -1,0 +1,16 @@
+.button, #right-side ul.tags li a, a#next, a#prev, ul.tabs li a, input#submit-button {
+	line-height: 23px;
+}
+
+#comment-form input, #contact-form input {
+	padding: 6px 10px 4px 10px;
+}
+
+.searchform input {
+	line-height: 20px;
+	height: 20px;
+}
+
+.menu-v ul li ul{
+	border: 1px solid #c1c1c1;
+}

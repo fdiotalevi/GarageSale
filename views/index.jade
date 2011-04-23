@@ -1,13 +1,19 @@
-h1= title
-h2= description
+ul.filter-nav
+  li
+    h4 Filter:
+  li.selected-1
+    a(href="#",data-value="all")
+      h4 All
+  li
+    a(href="#", data-value="print") Print
 
+.clear
 
-- each item, key in items
-	.item(id='item'+key)
-		.title(id='title-item'+key) #{item['title']} 
-		#item-image 
-			img(id='img-item'+key, src=item['image'])		
-		.description(id='description-item'+key) #{item['description']}
-		#item-price(id='price-item'+key) #{item['price']}
-						
-		
+ul(id="filter", class="grid")
+  - each item, key in items
+    li(data-id="id-"+key,class="web")
+      a(href=item['image'], rel="prettyPhoto[portfolio]")
+        img(src=item['image'], width='150', height='120')
+      a(href="portfolio-post.html", title="Permalink to Portfolio Post")
+        h6= item['title']
+      p= item['description']

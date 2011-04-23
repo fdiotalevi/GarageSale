@@ -1,16 +1,19 @@
-h1= title
+#adminarea
+  h1= title
 
-p
-  a(href='/admin/new') Create new item
-  span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  a(href='/logout') Logout
+  p
+    a(href='/admin/new') Create new item
+    span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    a(href='/logout') Logout
 
+  br
+  br  
+  h2 List of items 
 
-h2 List of items 
-
-ul
-  - each item in items
-    li
-      a(href='/edit/'+item['_id'])= item['title']       
-      span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      a(href='/delete/'+item['_id'], onclick='return confirm("Are you sure?")') Delete
+  table
+    - each item in items
+      tr
+        td
+          a(href='/edit/'+item['_id'])= item['title']       
+        td
+          a(href='/delete/'+item['_id'], onclick='return confirm("Are you sure?")') Delete

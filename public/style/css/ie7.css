@@ -1,0 +1,70 @@
+html {
+	overflow-x:hidden;
+}
+
+ul.list li span {
+	display: inline-block;
+}
+
+ul.list li a {
+	cursor: pointer;
+}
+
+ul.list li a:hover {
+	text-decoration: none;
+}
+
+.button, #right-side ul.tags li a, a#next, a#prev, ul.tabs li a, input#submit-button {
+	line-height: 21px;
+}
+
+ul.filter-nav {
+	padding: 0 0 10px 0;
+}
+
+
+#blog-top {
+	top:0;
+	left: 260px;
+}
+
+#comment-form input, #contact-form input {
+	padding: 6px 10px 4px 10px;
+}
+
+.searchform input {
+	line-height: 20px;
+	height: 20px;
+}
+
+#right-side ul.flickr li {
+	display: inline;
+}
+
+.post {
+	padding-top: 80px;
+	margin-bottom: 0;
+	clear: both;
+}
+
+
+#drop ul.page-navi li {
+	display: inline;
+}
+
+.menu-v ul li ul{
+	border: 1px solid #c1c1c1;
+}
+
+table td {
+	border:1px solid #cacaca;
+}
+
+table th {
+	border:1px solid #cacaca;
+}
+
+.dropcap {
+	font-size:27px;
+	margin:8px 8px 0px 0;
+}
