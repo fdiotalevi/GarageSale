@@ -23,6 +23,8 @@ ul(id="filter", class="grid")
         img(src=item['image'], width='150', height='120')
       a(href="/show/"+item['_id'], title="Show details")
         h6= item['title']
-      p= item['description'].substr(0,40)+'...'
+      p= item['description'].substr(0,40)
+        a(href="/show/"+item['_id'], title="Show details") ...>>
+        a(href="/show/"+item['_id'], title="Show details")
       p Price #{item['price']} Euro &nbsp;&nbsp;&nbsp;
         a(href="/show/"+item['_id'], title="Show details") Details
