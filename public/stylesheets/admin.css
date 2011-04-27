@@ -52,3 +52,15 @@
 	width: 600px;
 	padding: 18px;	
 }
+
+.item-image {
+	position:relative;
+}
+
+.overlay-slot {
+	position: absolute;
+	top:0;
+	left:0;
+	opacity:0.8; /* transparency */  
+    filter:alpha(opacity=80); /* IE transparency */	
+}

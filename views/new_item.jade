@@ -18,6 +18,8 @@
     p Price
     p
       input(type='text', name='item[price]', value=item.price, class='required')
+    p Sold? 
+      input(type='checkbox', name='item[sold]', value='true', checked=item.sold)      
     p
       input(type='submit', value='Save')
     p

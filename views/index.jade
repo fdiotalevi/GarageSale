@@ -19,8 +19,13 @@ ul.filter-nav
 ul(id="filter", class="grid")
   - each item, key in items
     li(data-id="id-"+key,class=item['category'], style="height:226px;")
-      a(href=item['image'], rel="prettyPhoto[portfolio]")
-        img(src=item['image'], width='150', height='120')
+      a(href=item['image'], rel="prettyPhoto[portfolio]")        
+        .item-image
+          .image-slot
+            img(src=item['image'], width='150', height='120')
+          - if (item['sold'])
+            .overlay-slot
+              img(src="/images/sold_badge.png", width='150', height='120')
       a(href="/show/"+item['_id'], title="Show details")
         h6= item['title']
       p= item['description'].substr(0,40)
