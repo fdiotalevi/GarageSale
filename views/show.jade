@@ -1,5 +1,10 @@
 #drop
-  img(src=item['image'])
+  .item-image
+    .image-slot
+      img(src=item['image'])
+    - if (item['sold'])
+      .overlay-slot
+        img(src="/images/sold_badge.png")
 
 #right-side
   h1= item['title']
