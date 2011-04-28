@@ -16,6 +16,9 @@
     - each item in items
       tr
         td
-          a(href='/edit/'+item['_id'])= item['title']       
+          a(href='/edit/'+item['_id'])= item['title']     
+        td
+          - if (item['sold'])
+            b (Sold)
         td
           a(href='/delete/'+item['_id'], onclick='return confirm("Are you sure?")') Delete
