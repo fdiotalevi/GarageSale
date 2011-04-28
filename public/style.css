@@ -1135,7 +1135,7 @@ h1.title a:hover {
 }
 
 #drop {
-	width: 455px;
+	width: 620px;
 	float: left;
 	margin-top: 75px;
 }
@@ -1162,7 +1162,7 @@ h1.title a:hover {
 
 #right-side {
 	width: 205px;
-	float: right;
+	float: left;
 	margin-top: 60px;
 	padding-top: 20px;
 	font-size: 14px;
