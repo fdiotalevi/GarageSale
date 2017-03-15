@@ -7,4 +7,6 @@ You're allowed to reuse the code as you prefer with no limitations, with the onl
 
 that are provided only as an example and must not be redistributed, as they are adapted from a licensed theme I bought on ThemeForest.net
 
+![alt tag](http://localhost:8080/badge)
+
 
